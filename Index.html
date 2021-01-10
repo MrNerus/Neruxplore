@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neruxplore</title>
+    <link rel="stylesheet" type="text/css" href="./Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="./function.js"></script>
+
+</head>
+
+<body>
+    <section class="background-page">
+        <div class="parallax-geomerty" data-speed="0.02"><i class="far fa-triangle"></i></div>
+        <div class="parallax-geomerty" data-speed="0.04"><i class="far fa-triangle"></i></div>
+        <div class="parallax-geomerty" data-speed="0.05"><i class="far fa-circle"></i></div>
+        <div class="parallax-geomerty" data-speed="-0.01"><i class="far fa-circle"></i></div>
+        <div class="parallax-geomerty" data-speed="-0.05"><i class="far fa-square"></i></div>
+        <div class="parallax-geomerty" data-speed="0.02"><i class="far fa-square"></i></div>
+        <div class="parallax-geomerty" data-speed="0.05"><i class="far fa-hexagon"></i></div>
+        <div class="parallax-geomerty" data-speed="-0.05"><i class="far fa-hexagon"></i></div>
+        <div class="parallax-geomerty" data-speed="-0.05"><i class="far fa-diamond"></i></div>
+        <div class="parallax-geomerty" data-speed="-0.02"><i class="far fa-diamond"></i></div>
+        <div class="parallax-geomerty" data-speed="0.05"><i class="far fa-heart"></i></div>
+        <div class="parallax-geomerty" data-speed="-0.01"><i class="far fa-heart"></i></div>
+        <div class="parallax-geomerty" data-speed="0.04"><i class="far fa-star"></i></div>
+        <div class="parallax-geomerty" data-speed="0.03"><i class="far fa-star"></i></div>
+
+    </section>
+    <section class="front" id="frontx">
+        <header class="headbar">
+            <div class="logo">
+                <img src="icon/logo.png" alt="">
+            </div>
+            <div class="navs">
+                <nav>
+                    <ul id="NavigiateUL" class="NavUL">
+                        <li><a class="white-text" href="#frontx">Home</a></li>
+                        <li><a class="white-text" href="#explorex">Explore</a></li>
+                        <li><a class="white-text" href="#contactx">Contacts</a></li>
+                        <li class="responsive-icon white-text" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="mySidenav" class="sidenav">
+            <a class="closebtn white-text" onclick="closeNav()">&times;</a>
+            <a class="SideLink white-text" href="#frontx" onclick="closeNav()">Home</a>
+            <a class="SideLink white-text" href="#explorex" onclick="closeNav()">Explore</a>
+            <a class="SideLink white-text" href="#contactx" onclick="closeNav()">Contacts</a>
+
+        </div>
+
+        <div class="main">
+            <h1 class="white-text">NERUXPLORE</h1>
+            <p class="CenterPragraph white-text">be lazy..be human</p>
+        </div>
+
+    </section>
+    <section class="Identity" id="explorex">
+        <div class="card-body">
+            <div class="card-element shadow-on-hover rounded-corner" onclick="photoshop_list_open()">
+                <img src="./icon/Adobe_Photoshop.png" alt="">
+                <p class="CenterPragraph white-text">Photoshop</p>
+            </div>
+            <div class="card-element shadow-on-hover rounded-corner" onclick="camera_lst_open()">
+                <img src="./icon/Camera.png" alt="">
+                <p class="CenterPragraph white-text">Camera</p>
+            </div>
+            <div class="card-element shadow-on-hover rounded-corner" onclick="python_lst_open()">
+                <img src="./icon/Python.png" alt="">
+                <p class="CenterPragraph white-text">Python</p>
+            </div>
+            <div class="card-element shadow-on-hover rounded-corner" onclick="blender_lst_open()">
+                <img src="./icon/Blender_logo.png" alt="">
+                <p class="CenterPragraph white-text">Blender</p>
+            </div>
+            <!-- Onclick modals starts here -->
+            <div id="PopupPSD" class="popup">
+                <div class="popup-container">
+                    <div class="popup-inside shadow-always rounded-corner">
+                        <header class="popup-header rounded-corner">
+                            <h1 class="white-text">Explore PSD</h1>
+                            <div onclick="photoshop_list_close()" class="closebtn white-text">
+                                &times;
+                            </div>
+                        </header>
+                        <div class="PopupBody">
+                            <ul id="psdlst">
+                                <!-- Added from photoshop.json -->
+                            </ul>
+                        </div>
+                        <div class="PopupFooter rounded-corner">
+                            <input id="PsdLstSearch" type="text" class="searchbar white-text" placeholder="Search Title" onkeyup="SearchPsd()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Onclick modals starts here -->
+            <div id="PopupCam" class="popup">
+                <div class="popup-container">
+                    <div class="popup-inside shadow-always rounded-corner">
+                        <header class="popup-header rounded-corner">
+                            <h1 class="white-text">Explore CAM</h1>
+                            <div onclick="camera_list_close()" class="closebtn white-text">
+                                &times;
+                            </div>
+                        </header>
+                        <div class="PopupBody">
+                            <ul id="camlst">
+                                <!-- Added from camera.json -->
+                            </ul>
+                        </div>
+                        <div class="PopupFooter rounded-corner">
+                            <input id="CamLstSearch" type="text" class="searchbar white-text" placeholder="Search Title" onkeyup="SearchCam()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Onclick modals starts here -->
+            <div id="PopupBlend" class="popup">
+                <div class="popup-container">
+                    <div class="popup-inside shadow-always rounded-corner">
+                        <header class="popup-header rounded-corner">
+                            <h1 class="white-text">Explore BLEND</h1>
+                            <div onclick="blender_list_close()" class="closebtn white-text">
+                                &times;
+                            </div>
+                        </header>
+                        <div class="PopupBody">
+                            <ul id="blendlst">
+                                <!-- Added from blender.json -->
+                            </ul>
+                        </div>
+                        <div class="PopupFooter rounded-corner">
+                            <input id="BlendLstSearch" type="text" class="searchbar white-text" placeholder="Search Title" onkeyup="SearchBlend()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Onclick modals starts here -->
+            <div id="PopupPy" class="popup">
+                <div class="popup-container">
+                    <div class="popup-inside shadow-always rounded-corner">
+                        <header class="popup-header rounded-corner">
+                            <h1 class="white-text">Explore PY</h1>
+                            <div onclick="python_list_close()" class="closebtn white-text">
+                                &times;
+                            </div>
+                        </header>
+                        <div class="PopupBody">
+                            <ul id="pylst">
+                                <!-- Added from Py.json -->
+                            </ul>
+                        </div>
+                        <div class="PopupFooter rounded-corner">
+                            <input id="PyLstSearch" type="text" class="searchbar white-text" placeholder="Search Title" onkeyup="SearchPy()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Identity" id="contactx">
+        <div class="card-body">
+            <div class="contact-info shadow-on-hover rounded-corner" onclick="Nerus_Contact_Open()">
+                <div><img src="./icon/Avatar.svg"></div>
+                <p class="white-text">Ard Nerus</p>
+            </div>
+            <div class="contact-info shadow-on-hover rounded-corner" onclick="Somebody_Contact_Open()">
+                <div><img src="./icon/Avatar.svg"></div>
+                <p class="white-text">Somebody Else</p>
+            </div>
+            <div class="contact-info shadow-on-hover rounded-corner" onclick="Another_Contact_Open()">
+                <div><img src="./icon/Avatar.svg"></div>
+                <p class="white-text">Another Person</p>
+            </div>
+            <!-- Onclick modals starts here -->
+            <div id="PopupContactArd" class="popup">
+                <div class="popup-container">
+                    <div class="popup-inside shadow-always rounded-corner">
+                        <header class="popup-header rounded-corner">
+                            <h1 class="white-text">Ard's Info</h1>
+                            <div onclick="Nerus_Contact_Close()" class="closebtn white-text">
+                                &times;
+                            </div>
+                        </header>
+                        <div class="PopupBody">
+                            <ul id="ArdContactList">
+                                <!-- Added from camera.json -->
+                            </ul>
+                        </div>
+                        <div class="PopupFooter rounded-corner">
+                            <input id="ArdContactListSearch" type="text" class="searchbar white-text" placeholder="Search Title" onkeyup="SearchArdContact()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Onclick modals starts here -->
+            <div id="PopupContactSomebody" class="popup">
+                <div class="popup-container">
+                    <div class="popup-inside shadow-always rounded-corner">
+                        <header class="popup-header rounded-corner">
+                            <h1 class="white-text">Somebody's Info</h1>
+                            <div onclick="Somebody_Contact_Close()" class="closebtn white-text">
+                                &times;
+                            </div>
+                        </header>
+                        <div class="PopupBody">
+                            <ul id="SomebodyContactList">
+                                <!-- Added from camera.json -->
+                            </ul>
+                        </div>
+                        <div class="PopupFooter rounded-corner">
+                            <input id="SomebodyContactListSearch" type="text" class="searchbar white-text" placeholder="Search Title" onkeyup="SearchSomebodyContact()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Onclick modals starts here -->
+            <div id="PopupContactAnother" class="popup">
+                <div class="popup-container">
+                    <div class="popup-inside shadow-always rounded-corner">
+                        <header class="popup-header rounded-corner">
+                            <h1 class="white-text">Another's Info</h1>
+                            <div onclick="Another_Contact_Close()" class="closebtn white-text">
+                                &times;
+                            </div>
+                        </header>
+                        <div class="PopupBody">
+                            <ul id="AnotherContactList">
+                                <!-- Added from camera.json -->
+                            </ul>
+                        </div>
+                        <div class="PopupFooter rounded-corner">
+                            <input id="AnotherContactListSearch" type="text" class="searchbar white-text" placeholder="Search Title" onkeyup="SearchAnotherContact()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./Visual.js"></script>
+</body>
+
+</html>

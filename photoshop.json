@@ -1,0 +1,27 @@
+[
+	{
+		"image": "./icon/Avatar.svg",
+		"title": "What on earth is Gomputer Graphics?",
+		"aurthor": "Ard Nerus"
+	},
+	{
+		"image": "./icon/Avatar.svg",
+		"title": "Why Photoshop?",
+		"aurthor": "Ard Nerus"
+	},
+	{
+		"image": "./icon/Avatar.svg",
+		"title": "Photoshop Introduction",
+		"aurthor": "Ard Nerus"
+	},
+	{
+		"image": "./icon/Avatar.svg",
+		"title": "Crop and Subject Composition",
+		"aurthor": "Ard Nerus"
+	},
+	{
+		"image": "./icon/Avatar.svg",
+		"title": "Layers and Masks",
+		"aurthor": "Ard Nerus"
+	}
+]

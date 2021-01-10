@@ -1,0 +1,55 @@
+[{
+        "Avtr": "./icon/Avatar.svg",
+        "SiteName": "Somebody Else",
+        "UserName": "male",
+        "hlink": "#"
+    },
+    {
+        "Avtr": "./icon/facebook.svg",
+        "SiteName": "Facebook",
+        "UserName": "MrNerus",
+        "hlink": "https://www.facebook.com/MrNerus"
+    },
+    {
+        "Avtr": "./icon/facebook-page.svg",
+        "SiteName": "Facebook Page",
+        "UserName": "MrNerusRender",
+        "hlink": "https://www.facebook.com/MrNerusRender/"
+    },
+    {
+        "Avtr": "./icon/instagram.svg",
+        "SiteName": "Instagram",
+        "UserName": "mrnerus",
+        "hlink": "https://www.instagram.com/MrNerus/"
+    },
+    {
+        "Avtr": "./icon/twitter.svg",
+        "SiteName": "Twitter",
+        "UserName": "@MrNerus",
+        "hlink": "https://twitter.com/MrNerus/"
+    },
+    {
+        "Avtr": "./icon/Google.svg",
+        "SiteName": "G-Mail",
+        "UserName": "",
+        "hlink": "mr.ard.nerus@gmail.com"
+    },
+    {
+        "Avtr": "./icon/imgur.svg",
+        "SiteName": "Imgur",
+        "UserName": "MrNerus",
+        "hlink": "https://imgur.com/user/MrNerus/posts"
+    },
+    {
+        "Avtr": "./icon/artstation.svg",
+        "SiteName": "Art Station",
+        "UserName": "mrnerus",
+        "hlink": "https://www.artstation.com/mrnerus"
+    },
+    {
+        "Avtr": "./icon/youtube.svg",
+        "SiteName": "Youutbe",
+        "UserName": "Comming Soon",
+        "hlink": "https://www.youtube.com/comming-soon"
+    }
+]

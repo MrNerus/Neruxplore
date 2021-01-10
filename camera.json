@@ -1,0 +1,27 @@
+[
+	{
+		"image": "./icon/Avatar.svg",
+		"title": "PhotoShoot",
+		"aurthor": "Ard Nerus"
+	},
+	{
+		"image": "./icon/Avatar.svg",
+		"title": "Terms and Terminology",
+		"aurthor": "Ard Nerus"
+	},
+	{
+		"image": "./icon/Avatar.svg",
+		"title": "Light and Camera",
+		"aurthor": "Ard Nerus"
+	},
+	{
+		"image": "./icon/Avatar.svg",
+		"title": "Structural Composition",
+		"aurthor": "Ard Nerus"
+	},
+	{
+		"image": "./icon/Avatar.svg",
+		"title": "Color Wheel",
+		"aurthor": "Ard Nerus"
+	}
+]

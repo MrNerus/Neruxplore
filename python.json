@@ -1,0 +1,27 @@
+[
+	{
+		"image": "./icon/Avatar.svg",
+		"title": "Which to learn first?",
+		"aurthor": "Ard Nerus"
+	},
+	{
+		"image": "./icon/Avatar.svg",
+		"title": "Setup",
+		"aurthor": "Ard Nerus"
+	},
+	{
+		"image": "./icon/Avatar.svg",
+		"title": "Choose your IDE",
+		"aurthor": "Ard Nerus"
+	},
+	{
+		"image": "./icon/Avatar.svg",
+		"title": "Hello World",
+		"aurthor": "Ard Nerus"
+	},
+	{
+		"image": "./icon/Avatar.svg",
+		"title": "Variable",
+		"aurthor": "Ard Nerus"
+	}
+]
